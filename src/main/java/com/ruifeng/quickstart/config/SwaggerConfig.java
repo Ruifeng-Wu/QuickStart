@@ -25,7 +25,7 @@ public class SwaggerConfig {
         ParameterBuilder ticketPar = new ParameterBuilder();
         List<Parameter> pars = new ArrayList<>();
         ticketPar.name(SecurityConstants.TOKEN_HEADER)
-                .description("user token")
+                .description("User token")
                 .modelRef(new ModelRef("string"))
                 .parameterType("header")
                 .required(false)
@@ -35,7 +35,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.lovecode"))
+                .apis(RequestHandlerSelectors.basePackage("com.ruifeng.quickstart"))
                 .paths(PathSelectors.any())
                 .build()
                 .globalOperationParameters(pars);
