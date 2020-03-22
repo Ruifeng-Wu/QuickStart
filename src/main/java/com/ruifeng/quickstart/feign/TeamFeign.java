@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
 
-@Service
 @FeignClient(name = "team-service", url = "${feign.team-service}", configuration = {KeepErrMsgConfiguration.class})
+@Service
 public interface TeamFeign {
 
     @GetMapping("/teams/")

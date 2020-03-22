@@ -19,4 +19,4 @@ spring:
     continue-on-error: true
 ###############################################################################
 feign:
-  team-service: http://localhost:8001
+  team-service: http://localhost:8081

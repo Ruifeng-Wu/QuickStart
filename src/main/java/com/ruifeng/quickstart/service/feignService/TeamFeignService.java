@@ -8,6 +8,7 @@ import java.util.List;
 
 @Service
 public class TeamFeignService {
+
     private final TeamFeign teamFeign;
 
     public TeamFeignService(TeamFeign teamFeign) {
