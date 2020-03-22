@@ -18,4 +18,5 @@ spring:
     initialization-mode: ALWAYS
     continue-on-error: true
 ###############################################################################
-
+feign:
+  team-service: http://localhost:8001
