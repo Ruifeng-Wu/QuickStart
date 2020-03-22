@@ -23,3 +23,6 @@ spring:
 ###############################################################################
 logging:
   config: classpath:logback.xml
+feign:
+  httpclient:
+    enabled: true
