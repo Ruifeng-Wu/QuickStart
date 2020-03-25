@@ -14,7 +14,7 @@ spring:
     sender:
       type: web
     service:
-      name: sub-project
+      name: quick-start
   sleuth:
     sampler:
       # 默认0.1, 旧版本为percentage，2.0.X版本改为probability
